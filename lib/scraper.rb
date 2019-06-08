@@ -15,6 +15,7 @@ class Scraper
       course.schedule = post.css(".date").text 
       course.description = post.css("p").text 
     end 
+    binding.pry 
   end 
   
     #calls on .make_courses and then iterates over all of the courses that get created to puts out a list of course offerings.

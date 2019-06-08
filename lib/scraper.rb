@@ -31,7 +31,7 @@ class Scraper
   
   #responsible for using css sel to grab all html elements that contain a course. Return value will be a collection of xml elements, each of which describes a course offering.
   def get_courses
-    
+    self.get_page.css(".post")
   end 
   
   #responsible for actually instantiating Course objects and giving each course object the correct title, schedule and description attribute that we scraped from the page.
